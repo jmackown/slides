@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'final_frontier';
+  src:  url('../../lib/font/final-frontier/final_frontier.ttf') format('truetype');
+}
+
+h1 {
+    font-family: final_frontier !important;
+    font-size: 5em !important;
+}

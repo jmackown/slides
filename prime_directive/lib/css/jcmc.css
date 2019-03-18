@@ -1,0 +1,52 @@
+/* theme overrides */
+.wrapper{
+    margin-top: 5vw;
+    margin-bottom: 1vw;
+}
+
+.wrapper a:hover {
+    color: rebeccapurple;
+    text-decoration: none;
+}
+.site-header {
+    border-bottom: none;
+    border-top: none;
+}
+
+/* custom */
+.title {
+    font-family: 'Londrina Outline', cursive !important;
+    font-size: 5vw !important;
+    /* width: 10rem; */
+    padding-left: 64vw !important;
+    padding-right: 2vw !important;
+    position: relative !important;
+}
+
+#name {
+    position: absolute !important;
+    float: left !important;
+}
+#logo {
+    position: absolute !important;
+    margin-left: 10vw !important;
+    margin-top: 0.5vw !important;
+  -webkit-transform: rotate(-90deg) !important;
+  -moz-transform: rotate(-90deg) !important;
+  -ms-transform: rotate(-90deg) !important;
+  -o-transform: rotate(-90deg) !important;
+
+}
+#logo #eyes {
+/*   font-family: 'Londrina Solid', cursive; */
+  position: relative !important; 
+  top: -0.11em !important; 
+}
+
+.footer-title {
+  font-family: 'Londrina Outline', cursive;
+  font-size: 2rem; 
+  width: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem;  
+}
