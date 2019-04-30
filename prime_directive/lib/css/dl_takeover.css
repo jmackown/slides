@@ -1,0 +1,39 @@
+.reveal section img {
+    margin: 15px 0px;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+a{
+  color:black;
+  font-family:sans-serif;
+}
+.stamp-container{
+    position: absolute;
+    left: 0px;
+  font-size:7em;
+  color:red;
+  display:inline-block;
+  font-family:sans-serif;
+  padding:10px 20px;
+  margin:40px;
+  transform:rotate(-5deg);
+}
+
+.stamp-text{
+  border:10px solid red !important;
+  -webkit-mask-size: contain;
+  color: red !important;
+  font-size: 4.2em !important;
+  -webkit-mask-image: url("../images/crack-grunge-texture-PNG-thumb24.png");
+  /* -o-mask-image:url("lib/images/crack-grunge-texture-PNG-thumb24.png");
+  -moz-mask-image:url("lib/images/crack-grunge-texture-PNG-thumb24.png");
+  -ms-mask-image:url("lib/images/crack-grunge-texture-PNG-thumb24.png");
+  mask-image: url("lib/images/crack-grunge-texture-PNG-thumb24.png"); */
+}
+
+.faded {
+    opacity: 0.2;
+}
