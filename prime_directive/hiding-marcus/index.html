@@ -1,41 +1,12 @@
 <html>
 
 <head>
-    <title>Hiding Marcus</title>
-    <style>
-        .marcus {
-            margin: 0 auto;
-            white-space: nowrap;
-            overflow: hidden;
-            box-sizing: border-box;
-            position: absolute
-        }
-
-    </style>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Scrolling Marcus</title>
+    <meta http-equiv="refresh" content="0; URL='../marcus-suite/hiding-marcus'" />
 </head>
 
 <body>
-    <div class="marcus">
-        <span>
-            <img src="https://res.cloudinary.com/dtgdtfwtu/image/upload/v1562924142/blog_images/40825-0-4.jpg" /></span>
-    </div>
+
 </body>
-
-<script>
-    $('.marcus').on('mouseenter', function (e) {
-            var maxX = $(window).width() - $(this).width();
-            var maxY = $(window).height() - $(this).height();
-            $(this).css({
-                'left': getRandomInt(0, maxX),
-                'top': getRandomInt(0, maxY)
-            });
-        });
-        function getRandomInt(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-
-</script>
 
 </html>
