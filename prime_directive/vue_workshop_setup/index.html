@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>JCMC - Migrating from jQUery to Vue</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../css/reveal.css">
+    <link rel="stylesheet" href="../css/theme/sky.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../lib/css/zenburn.css">
+
+    <!-- JCMC Theme -->
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/css/jcmc.css">
+
+    <!-- Custom CSS for this talk only -->
+    <!-- <link rel="stylesheet" href="../lib/css/prime_directive.css"> -->
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? '../css/print/pdf.css' : '../css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+
+
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-image="">
+                <h1>Migrating from jQuery to Vue</h1>
+
+                <span class="contact">
+                    Jennifer Mackown | @__jcmc
+                </span>
+                <span class="title">
+                    <span id="logo" style="margin-top: 3vw !important;">
+                        <span id="eyes">:</span><span id="hair">}</span>
+                    </span>
+                </span>
+                <!-- <aside class="notes">
+                        There is a concept in Agile called "The Prime Directive". 
+                        It was designed to be used in retrospectives, but I think it
+                        has a broader application, across all areas of work and life.
+                        The concept is:
+                    </aside> -->
+            </section>
+
+            <section>
+                <h1>
+                    Setup
+                </h1>
+
+                <h3>
+                    This MUST be completed before the workshop, it will only take 5 minutes.
+                </h3>
+
+            </section>
+            <section>
+                <h2>
+                    Disclaimer
+                </h2>
+                
+                    This whole thing has been 100% stolen from this guy: 
+                    <a href="https://twitter.com/expensivestevie">Kenigbolo Meya Stephen</a>
+                    and his <a
+                        href="https://skillsmatter.com/conferences/11213-fullstack-london-2019-the-conference-on-javascript-node-and-internet-of-things?session=workshop-jquery-to-vuejs-not-rocket-science#program">
+                        workshop</a> at FullStack London July 2019.
+                
+            </section>
+            <section>
+            
+                    1. Create/Login to your GithHub account
+            
+            </section>
+            <section>
+                
+            
+                    2. Go to <span class="visible_link">https://codesandbox.io/</span> and log in with your GitHub account
+                
+            </section>
+            <section>
+                
+                    3. Create new Sandbox: <img
+                        src="https://res.cloudinary.com/dtgdtfwtu/image/upload/v1563368620/vue_workshop/create_sandbox.png" />
+                
+            </section>
+            <section>
+                
+                    4. Copy this URL: <span
+                        class="visible_link">https://github.com/kenigbolo/jquery-to-vue-workshop</span>
+                
+            </section>
+            <section>
+                
+                    5. Paste URL in here: <img
+                        src="https://res.cloudinary.com/dtgdtfwtu/image/upload/v1563368620/vue_workshop/import_project.png" />
+                
+            </section>
+            <section>
+                
+                    6. Now go back to doing some work, you bum.
+                
+                
+            </section>
+
+
+
+            
+
+        </div>
+    </div>
+
+
+    <script src="../lib/js/head.min.js"></script>
+    <script src="../js/reveal.js"></script>
+
+    <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [{
+                    src: '../lib/js/classList.js',
+                    condition: function () {
+                        return !document.body.classList;
+                    }
+                },
+                {
+                    src: '../plugin/markdown/marked.js',
+                    condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: '../plugin/markdown/markdown.js',
+                    condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: '../plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                },
+                {
+                    src: '../plugin/search/search.js',
+                    async: true
+                },
+                {
+                    src: '../plugin/zoom-js/zoom.js',
+                    async: true
+                },
+                {
+                    src: '../plugin/notes/notes.js',
+                    async: true
+                }
+            ]
+        });
+    </script>
+
+</body>
+
+</html>
